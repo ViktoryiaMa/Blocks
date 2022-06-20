@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1177px;
+    margin: 0 auto;
+}
+
+.tab__item {
+    display: inline-block;
+    width: 184px;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tab__item--first {
+    width: 204px;
+    height: 40px;
+    border: 1px solid #C6CBCD;
+    border-bottom: 2px solid white;
+    border-radius: 4px 4px 0 0;
+}
+
+.tab__item__title {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.container {
+    display: block;
+    width: 1177px;
+    border: 1px solid #C6CBCD;
+    margin-top: -2px;
+}
+
+.container__item {
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.container__title {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    width: 570px;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 100px;
+    line-height: 41px;
+
+}
+
+.container__item__text {
+    font-family: 'Raleway', sans-serif;
+    width: 570px;
+    font-size: 18px;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 27px;
+    margin-right: 30px;
+    margin-bottom: 27px;
+}
+
+.container__button {
+    display: block;
+    background-color: #EC7979;
+    width: 270px;
+    height: 58px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+    border: none;
+    margin-left: 100px;
+}
+
+.container__img {
+    display: inline-block;
+    width: 470px;
+}
