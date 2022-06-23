@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wrapper__background {
+    background-image: url("../accets/image.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    padding: 30.5px 0;
+}
+
+.header-logo {
+    margin: 0 0 0 170px;
+}
+
+.header-nav {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.header-nav__item {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    width: 113.8px;
+}
+
+.header-nav__item:last-child {
+    margin-right: 170px;
+}
+
+.header-content__logo {
+    margin: 207px 0 50.88px 170px;
+}
+
+.header-content__description {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    color: #FFFFFF;
+    margin: 0 0 0 170px;
+    padding: 0 0 55.12px 0;
+    text-transform: uppercase;
+}
+
+.header-content__description:after {
+    content: "";
+    position: absolute;
+    width: 170px;
+    bottom: 0;
+    height: 1px;
+    background: #FFFFFF;
+}
+
+.header-content__text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 42px 0 42px 170px;
+}
+
+.header-content__button {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    width: 270px;
+    height: 58px;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    margin: 0 0 185px 170px;
+}
+.header-content__button:hover{
+    border: 2px solid #EC7979;
+    color: background: #EC7979;
+}
+.header-content__button:active{
+    border: 2px solid #AB4949;
+    background: #AB4949;
+    color: #FFFFFF;
+}
