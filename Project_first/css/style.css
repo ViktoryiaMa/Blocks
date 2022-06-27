@@ -9,33 +9,51 @@
 }
 
 .wrapper {
+    position: relative;
     max-width: 1200px;
     margin: 0 auto;
+    z-index: 3;
 }
 
-.wrapper__background {
+.section__first {
+    position: relative;
     background-image: url("../accets/image.png");
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
+    background-size: cover;
+}
+
+.section__first:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
     background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: multiply;
+    top: 0;
+    left: 0;
 }
 
 .header {
+    position: relative;
+    z-index: 4;
     display: flex;
     justify-content: space-between;
     background-color: black;
     align-items: center;
-    padding: 30.5px 0;
 }
 
 .header-logo {
     margin: 0 0 0 170px;
 }
 
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
 .header-nav {
     display: flex;
-    text-decoration: none;
     list-style-type: none;
 }
 
@@ -46,28 +64,45 @@
     color: #FFFFFF;
     text-transform: capitalize;
     width: 113.8px;
+    height: 75px;
+    text-align: center;
+    margin: 1px 0;
+    padding: 30.5px 0;
+}
+
+.header-nav__item:hover {
+    background-color: #EC7979;
+}
+
+.header-nav__item:active {
+    background-color: #AB4949;
 }
 
 .header-nav__item:last-child {
     margin-right: 170px;
 }
 
-.header-content__logo {
-    margin: 207px 0 50.88px 170px;
+.main__container {
+    display: flex;
+    justify-content: space-between;
 }
 
-.header-content__description {
+.main-content__logo {
+    margin: 207px 0 50.88px 0;
+}
+
+.main-content__description {
     position: relative;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 48px;
     color: #FFFFFF;
-    margin: 0 0 0 170px;
+
     padding: 0 0 55.12px 0;
     text-transform: uppercase;
 }
 
-.header-content__description:after {
+.main-content__description:after {
     content: "";
     position: absolute;
     width: 170px;
@@ -76,15 +111,15 @@
     background: #FFFFFF;
 }
 
-.header-content__text {
+.main-content__text {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 18px;
     color: #FFFFFF;
-    margin: 42px 0 42px 170px;
+    margin: 42px 0 42px 0;
 }
 
-.header-content__button {
+.main-content__button {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     font-size: 18px;
@@ -93,18 +128,155 @@
     background-color: rgba(0, 0, 0, 0.25);
     color: #FFFFFF;
     border: 2px solid #FFFFFF;
-    margin: 0 0 185px 170px;
+    margin: 0 0 185px 0;
+    cursor: pointer;
 }
 
-.header-content__button:hover {
+.main-content__button:hover {
     border: 2px solid #EC7979;
-    color: background: #EC7979;
+    background: #EC7979;
 }
 
-.header-content__button:active {
+.main-content__button:active {
     border: 2px solid #AB4949;
     background: #AB4949;
     color: #FFFFFF;
+}
+
+.form-item {
+    width: 470px;
+    height: 450px;
+    border-radius: 10px;
+    border: none;
+    background-color: #FFFFFF;
+    margin: 207px 0 0 0;
+}
+
+.form-item__title {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #333333;
+    text-transform: uppercase;
+    padding: 33px 0;
+    margin: 0 0 0 53px;
+}
+
+#pink {
+    color: #EC7979;
+}
+
+
+#name-form {
+    display: block;
+    width: 370px;
+    border-bottom: 1px solid #BDBDBD;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #BDBDBD;
+    margin: 45px 0 0 50px;
+    padding: 0 0 16px 0;
+}
+
+#email-form {
+    display: block;
+    width: 370px;
+    border-bottom: 1px solid #BDBDBD;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #BDBDBD;
+    margin: 33px 0 0 50px;
+    padding: 0 0 16px 0;
+}
+
+#password-form {
+    display: block;
+    width: 370px;
+    border-bottom: 1px solid #BDBDBD;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #BDBDBD;
+    margin: 33px 0 0 50px;
+    padding: 0 0 16px 0;
+}
+
+.main__form__button {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #FFFFFF;
+    width: 470px;
+    height: 60px;
+    background-color: #EC7979;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 75px 0 0 0;
+    border: none;
+    cursor: pointer;
+}
+
+.main__form__button:hover {
+    content: "";
+    background-color: #AB4949;;
+}
+
+.main__form__button:active {
+    content: "";
+    background-color: #EC7979;;
+}
+
+.section__six {
+    background-color: #F8EFEF;
+}
+
+.media {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.media-title {
+    padding: 18px 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.media-text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 18px 0 18px 0;
+}
+
+.media-navigation {
+    margin: 33px 0 0 0;
+}
+
+.media-img {
+    width: 70px;
+    height: 70px;
+    margin: 0 30px 0 0;
+}
+
+.media-img:first-child {
+    margin-left: 30px;
+}
+
+.media-img:last-child {
+    margin: 0 0 0 0;
 }
 
 .tab__content {
@@ -173,6 +345,7 @@
     margin: 27px 30px 27px 100px;
 }
 
+
 .container-item__button {
     display: block;
     background-color: #EC7979;
@@ -185,6 +358,7 @@
     text-align: center;
     border: none;
     margin-left: 100px;
+    cursor: pointer;
 }
 
 .container-item__button:hover {
@@ -212,6 +386,7 @@
     margin: 0 auto;
     color: #000000;
     padding: 0 0 57px 0;
+    text-transform: uppercase;
 }
 
 .awesome__title {
@@ -284,8 +459,11 @@
     text-align: center;
 }
 
-.pricing__content {
+.section__fourth {
     background-color: #F5F5F5;
+}
+
+.pricing__content {
     max-width: 1200px;
 }
 
@@ -368,8 +546,7 @@
     border: 2px solid #F5F5F5;
     color: #FFFFFF;
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 14px;
+    padding: 15px 0 14px 0;
 }
 
 .pricing-item__description {
@@ -386,7 +563,229 @@
     padding-bottom: 14px;
 }
 
+.pricing-item__description:last-child {
+    margin: 0 0 50px 0;
+}
+
 .pricing-item__second {
     position: relative;
     top: -20px;
+}
+
+.customer {
+    margin: 0 0 71px 0;
+}
+
+.customer__title {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    margin: 0 auto;
+    color: #000000;
+    text-transform: uppercase;
+    height: 150px;
+    padding: 50px 0 57px 0;
+}
+
+.customer__title:after {
+    content: "";
+    position: absolute;
+    width: 170px;
+    bottom: 0;
+    height: 1px;
+    background: #EC7979;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.customer__text {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #86878B;
+    margin: 40px 0 71px 0;
+}
+
+.item-customer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-block__text {
+    position: relative;
+    background-color: #E2E2E2;
+    width: 370px;
+    text-align: center;
+    padding: 38px 0 37px 0;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #86878B;
+}
+
+.content-block__text:after {
+    content: "";
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 30px solid #E2E2E2;
+    bottom: -30px;
+    margin: 0 0 0 -70px;
+}
+
+.content-block__img {
+    margin: 66px 0 0 0;
+    align-items: center;
+
+}
+
+.customer-info {
+    display: flex;
+    align-items: center;
+}
+
+.content-block__title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 66px 0 0 30px;
+    padding: 15px 0;
+}
+
+.content-block__description {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 15px 0 0 30px;
+}
+
+.content-block__list {
+    text-align: left;
+}
+
+.section__nine {
+    background-color: #000000;
+
+}
+
+.footer-navigation {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-img {
+    margin: 35px 32.8px 27.8px 0;
+}
+
+.navigation-img:last-child {
+    margin-right: 0;
+}
+
+.footer-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 0 0 27px 0;
+}
+
+.contactus__title {
+    height: 150px;
+    padding: 57px 0 0 0;
+
+}
+
+.title:after {
+    content: "";
+    position: absolute;
+    width: 170px;
+    bottom: 0;
+    height: 1px;
+    background: #EC7979;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contactus__text {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;7
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #86878B;
+    margin: 40px 0 89px 0;
+}
+.contactus__content{
+    display: flex;
+
+}
+textarea{
+    resize: none;
+    outline: none;
+    border: none;
+}
+#name-form-second{
+    display: block;
+    width: 571px;
+    border-bottom: 1px solid #BDBDBD;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #BDBDBD;
+    padding: 0 0 16px 0;
+}
+
+#email-form-second {
+    display: block;
+    width: 571px;
+    border-bottom: 1px solid #BDBDBD;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #BDBDBD;
+    padding: 0 0 16px 0;
+    margin: 50px 0;
+}
+
+#password-form-second {
+    display: block;
+    width: 571px;
+    border-bottom: 1px solid #BDBDBD;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #BDBDBD;
+    padding: 0 0 16px 0;
+    margin: 50px 0;
+}
+#message{
+    display: block;
+    width: 569px;
+    height: 209px;
+    border-bottom: 1px solid #BDBDBD;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #BDBDBD;
+    margin: 0 0 0 30px;
 }
