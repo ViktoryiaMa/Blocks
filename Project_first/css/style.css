@@ -180,6 +180,7 @@ a {
     color: #BDBDBD;
     margin: 45px 0 0 50px;
     padding: 0 0 16px 0;
+    outline: none;
 }
 
 #email-form {
@@ -195,6 +196,7 @@ a {
     color: #BDBDBD;
     margin: 33px 0 0 50px;
     padding: 0 0 16px 0;
+    outline: none;
 }
 
 #password-form {
@@ -210,6 +212,7 @@ a {
     color: #BDBDBD;
     margin: 33px 0 0 50px;
     padding: 0 0 16px 0;
+    outline: none;
 }
 
 .main__form__button {
@@ -716,23 +719,25 @@ a {
 
 .contactus__text {
     font-family: 'Raleway', sans-serif;
-    font-style: normal;7
     font-weight: 400;
     font-size: 18px;
     text-align: center;
     color: #86878B;
     margin: 40px 0 89px 0;
 }
-.contactus__content{
+
+.contactus__content {
     display: flex;
 
 }
-textarea{
+
+textarea {
     resize: none;
     outline: none;
     border: none;
 }
-#name-form-second{
+
+#name-form-second {
     display: block;
     width: 571px;
     border-bottom: 1px solid #BDBDBD;
@@ -744,6 +749,7 @@ textarea{
     font-size: 14px;
     color: #BDBDBD;
     padding: 0 0 16px 0;
+    outline: none;
 }
 
 #email-form-second {
@@ -759,6 +765,7 @@ textarea{
     color: #BDBDBD;
     padding: 0 0 16px 0;
     margin: 50px 0;
+    outline: none;
 }
 
 #password-form-second {
@@ -774,8 +781,10 @@ textarea{
     color: #BDBDBD;
     padding: 0 0 16px 0;
     margin: 50px 0;
+    outline: none;
 }
-#message{
+
+#message {
     display: block;
     width: 569px;
     height: 209px;
@@ -788,4 +797,16 @@ textarea{
     font-size: 14px;
     color: #BDBDBD;
     margin: 0 0 0 30px;
+    outline: none;
+}
+
+.contactus-button {
+    width: 370px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #EC7979;
+    color: #FFFFFF;
+    border: none;
+    padding: 20px 0;
 }
