@@ -220,7 +220,7 @@ a {
     font-weight: 600;
     font-size: 15px;
     color: #FFFFFF;
-    width: 470px;
+    width: 100%;
     height: 60px;
     background-color: #EC7979;
     border-bottom-left-radius: 10px;
@@ -634,11 +634,11 @@ a {
 .content-block__text:after {
     content: "";
     position: absolute;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 30px solid #E2E2E2;
-    bottom: -30px;
-    margin: 0 0 0 -70px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid #E2E2E2;
+    top: 100%;
+    left: 80px;
 }
 
 .content-block__img {
@@ -674,6 +674,7 @@ a {
 
 .section__nine {
     background-color: #000000;
+    background-size: cover;
 
 }
 
@@ -800,7 +801,12 @@ textarea {
     outline: none;
 }
 
-.contactus-button {
+.contactus__button {
+    display: flex;
+    justify-content: center;
+}
+
+.button-form {
     width: 370px;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
@@ -809,4 +815,82 @@ textarea {
     color: #FFFFFF;
     border: none;
     padding: 20px 0;
+    cursor: pointer;
+    margin: 0 0 50px 0;
+}
+
+.button-form:hover {
+    background: #AB4949;
+}
+
+.button-form:active {
+    background: #EC7979;
+}
+
+.section__ten {
+    position: relative;
+    background-image: url("../accets/town.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section__ten:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+
+.stylish__title {
+    color: #FFFFFF;
+    padding: 57px 0;
+    margin: 50px 0 40px 0;
+}
+
+.stylish__text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 1.5px 0;
+    text-align: center;
+    margin: 0 0 73px 0;
+}
+
+.stylish__title:after {
+    content: "";
+    background-color: #FFFFFF;
+}
+
+.stylish__button {
+    display: flex;
+    justify-content: center;
+}
+
+.button-item {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    width: 270px;
+    height: 58px;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    margin: 0 0 50px 0;
+    cursor: pointer;
+}
+
+.button-item:hover {
+    border: 2px solid #EC7979;
+    background: #EC7979;
+}
+
+.button-item:active {
+    border: 2px solid #AB4949;
+    background: #AB4949;
+    color: #FFFFFF;
 }
