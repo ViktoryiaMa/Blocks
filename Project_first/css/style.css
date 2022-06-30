@@ -477,10 +477,6 @@
     background-color: #F5F5F5;
 }
 
-.pricing__content {
-    max-width: 1200px;
-}
-
 .title {
     position: relative;
     font-family: 'Raleway', sans-serif;
@@ -524,7 +520,7 @@
 .pricing__section {
     display: flex;
     justify-content: space-between;
-    margin-top: 79px;
+    margin: 79px 0 0 0;
 }
 
 .pricing-item__title {
@@ -576,11 +572,9 @@
     padding-top: 15px;
     padding-bottom: 14px;
 }
-
-.pricing-item__description:last-child {
+.pricing-item{
     margin: 0 0 50px 0;
 }
-
 .pricing-item:hover {
     position: relative;
     top: -20px;
