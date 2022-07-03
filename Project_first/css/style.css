@@ -732,9 +732,12 @@
     padding: 0 0 27px 0;
 }
 
+.contactus{
+    margin: 50px 0 64px 0;
+}
 .contactus__title {
     height: 150px;
-    padding: 57px 0 0 0;
+    padding: 57px 0;
 
 }
 
@@ -761,7 +764,7 @@
 .contactus__content {
     display: flex;
     justify-content: space-between;
-
+flex-grow: 1;
 }
 
 textarea {
@@ -1191,6 +1194,113 @@ textarea {
     .button-item {
         width: 318px;
         height: 58px;
+    }
+
+    .contactus{
+        margin: 50px 0;
+    }
+    .contactus__title {
+        height: 120px;
+        padding: 48px 0;
+    }
+
+    .title:after {
+        width: 144px;
+    }
+
+    .contactus__text {
+        font-size: 14px;
+        margin: 32px 0 72px 0;
+    }
+
+    #name-form-second {
+        display: block;
+        width: 571px;
+        border-bottom: 1px solid #BDBDBD;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #BDBDBD;
+        padding: 0 0 16px 0;
+        outline: none;
+    }
+
+    #email-form-second {
+        display: block;
+        width: 571px;
+        border-bottom: 1px solid #BDBDBD;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #BDBDBD;
+        padding: 0 0 16px 0;
+        margin: 50px 0;
+        outline: none;
+    }
+
+    #password-form-second {
+        display: block;
+        width: 571px;
+        border-bottom: 1px solid #BDBDBD;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #BDBDBD;
+        padding: 0 0 16px 0;
+        margin: 50px 0;
+        outline: none;
+    }
+
+    #message {
+        display: block;
+        width: 569px;
+        height: 209px;
+        border-bottom: 1px solid #BDBDBD;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #BDBDBD;
+        margin: 0 0 0 30px;
+        outline: none;
+    }
+
+    .contactus_button {
+        display: flex;
+        justify-content: center;
+    }
+
+    .button-form {
+        width: 370px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        background-color: #EC7979;
+        color: #FFFFFF;
+        border: none;
+        padding: 20px 0;
+        cursor: pointer;
+        margin: 0 0 50px 0;
+        transition: 0.3s;
+    }
+
+    .button-form:hover {
+        background: #AB4949;
+    }
+
+    .button-form:active {
+        background: #EC7979;
     }
 
 }
