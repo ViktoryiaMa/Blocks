@@ -316,7 +316,7 @@
 .first {
     width: 204px;
     border: 1px solid #C6CBCD;
-    border-bottom: 2px solid white;
+    border-bottom: 3px solid white;
     border-radius: 4px 4px 0 0;
     justify-content: center;
 }
@@ -334,7 +334,6 @@
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
-
 }
 
 .tab__container {
@@ -764,7 +763,8 @@
 .contactus__content {
     display: flex;
     justify-content: space-between;
-flex-grow: 1;
+    flex-grow: 1;
+    width: ;
 }
 
 textarea {
@@ -775,7 +775,7 @@ textarea {
 
 #name-form-second {
     display: block;
-    width: 571px;
+    width: 100%;
     border-bottom: 1px solid #BDBDBD;
     border-top: none;
     border-right: none;
@@ -790,7 +790,7 @@ textarea {
 
 #email-form-second {
     display: block;
-    width: 571px;
+    width: 100%;
     border-bottom: 1px solid #BDBDBD;
     border-top: none;
     border-right: none;
@@ -806,7 +806,7 @@ textarea {
 
 #password-form-second {
     display: block;
-    width: 571px;
+    width: 100%;
     border-bottom: 1px solid #BDBDBD;
     border-top: none;
     border-right: none;
@@ -822,7 +822,7 @@ textarea {
 
 #message {
     display: block;
-    width: 569px;
+    width: 100%;
     height: 209px;
     border-bottom: 1px solid #BDBDBD;
     border-top: none;
@@ -862,6 +862,164 @@ textarea {
 .button-form:active {
     background: #EC7979;
 }
+
+/*.contactus{*/
+/*    margin: 50px 0;*/
+/*}*/
+/*.contactus__title {*/
+/*    height: 150px;*/
+/*    padding: 57px 0;*/
+/*}*/
+
+/*.title:after {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    width: 170px;*/
+/*    bottom: 0;*/
+/*    height: 1px;*/
+/*    background: #EC7979;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%, -50%);*/
+/*}*/
+
+/*.contactus__text {*/
+/*    font-family: 'Raleway', sans-serif;*/
+/*    font-weight: 400;*/
+/*    font-size: 18px;*/
+/*    text-align: center;*/
+/*    color: #86878B;*/
+/*    margin: 40px 0 89px 0;*/
+/*}*/
+
+/*.contactus__content {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    flex-grow: 1;*/
+/*    margin: 0 0 50px 0;*/
+/*}*/
+/* .contactus-item{*/
+/*     display: flex;*/
+/*     justify-content: space-between;*/
+/*     flex-direction: column;*/
+/*    flex-shrink: 1;*/
+/*     margin: 0 30px 0 0 ;*/
+/* }*/
+/* .contactus-item_point{*/
+/*     display: flex;*/
+/*     width: 571px;*/
+/*     border: 1px solid #BDBDBD;*/
+/*     border-top: none;*/
+/*     border-left: none;*/
+/*     border-right: none;*/
+/*     justify-content: space-between;*/
+/* }*/
+
+/*.contactus-item_message{*/
+/*    display: flex;*/
+/*    width: 569px;*/
+/*    border: 1px solid #BDBDBD;*/
+/*    border-top: none;*/
+/*    border-left: none;*/
+/*    border-right: none;*/
+/*    justify-content: start;*/
+/*    flex-grow: 1;*/
+/*}*/
+
+/*.textarea {*/
+/*    resize: none;*/
+/*    outline: none;*/
+/*    border: none;*/
+/*}*/
+
+/*#name-form-second {*/
+/*    display: block;*/
+/*    width: 100%;*/
+/*    border-bottom: none;*/
+/*    border-top: none;*/
+/*    border-right: none;*/
+/*    border-left: none;*/
+/*    font-family: "Open Sans", sans-serif;*/
+/*    font-weight: 400;*/
+/*    font-size: 14px;*/
+/*    color: #BDBDBD;*/
+/*    padding: 0 0 16px 0;*/
+/*    outline: none;*/
+/*}*/
+
+/*#email-form-second {*/
+/*    display: block;*/
+/*    width: 100%;*/
+/*    border-bottom: none;*/
+/*    border-top: none;*/
+/*    border-right: none;*/
+/*    border-left: none;*/
+/*    font-family: "Open Sans", sans-serif;*/
+/*    font-weight: 400;*/
+/*    font-size: 14px;*/
+/*    color: #BDBDBD;*/
+/*    padding: 0 0 16px 0;*/
+/*    margin: 50px 0;*/
+/*    outline: none;*/
+/*}*/
+
+/*#password-form-second {*/
+/*    display: block;*/
+/*    width: 100%;*/
+/*    border-bottom: none;*/
+/*    border-top: none;*/
+/*    border-right: none;*/
+/*    border-left: none;*/
+/*    font-family: "Open Sans", sans-serif;*/
+/*    font-weight: 400;*/
+/*    font-size: 14px;*/
+/*    color: #BDBDBD;*/
+/*    padding: 0 0 16px 0;*/
+/*    margin: 50px 0;*/
+/*    outline: none;*/
+/*}*/
+
+/*#message {*/
+/*    resize: none;*/
+/*    display: block;*/
+/*    width: 100%;*/
+/*    height: 209px;*/
+/*    border-bottom: none;*/
+/*    border-top: none;*/
+/*    border-right: none;*/
+/*    border-left: none;*/
+/*    font-family: "Open Sans", sans-serif;*/
+/*    font-weight: 400;*/
+/*    font-size: 14px;*/
+/*    color: #BDBDBD;*/
+/*    margin: 0 0 0 30px;*/
+/*    outline: none;*/
+/*}*/
+
+/*.contactus_button {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*.button-form {*/
+/*    width: 370px;*/
+/*    font-family: 'Raleway', sans-serif;*/
+/*    font-weight: 600;*/
+/*    font-size: 18px;*/
+/*    background-color: #EC7979;*/
+/*    color: #FFFFFF;*/
+/*    border: none;*/
+/*    padding: 20px 0;*/
+/*    cursor: pointer;*/
+/*    transition: 0.3s;*/
+/*}*/
+
+/*.button-form:hover {*/
+/*    background: #AB4949;*/
+/*}*/
+
+/*.button-form:active {*/
+/*    background: #EC7979;*/
+/*}*/
 
 .section__ten {
     position: relative;
@@ -1214,66 +1372,22 @@ textarea {
     }
 
     #name-form-second {
-        display: block;
-        width: 571px;
-        border-bottom: 1px solid #BDBDBD;
-        border-top: none;
-        border-right: none;
-        border-left: none;
-        font-family: "Open Sans", sans-serif;
-        font-weight: 400;
-        font-size: 14px;
-        color: #BDBDBD;
-        padding: 0 0 16px 0;
-        outline: none;
+        width: 486px;
     }
 
     #email-form-second {
-        display: block;
-        width: 571px;
-        border-bottom: 1px solid #BDBDBD;
-        border-top: none;
-        border-right: none;
-        border-left: none;
-        font-family: "Open Sans", sans-serif;
-        font-weight: 400;
-        font-size: 14px;
-        color: #BDBDBD;
-        padding: 0 0 16px 0;
-        margin: 50px 0;
-        outline: none;
+        width: 486px;
     }
 
     #password-form-second {
-        display: block;
-        width: 571px;
-        border-bottom: 1px solid #BDBDBD;
-        border-top: none;
-        border-right: none;
-        border-left: none;
-        font-family: "Open Sans", sans-serif;
-        font-weight: 400;
-        font-size: 14px;
-        color: #BDBDBD;
-        padding: 0 0 16px 0;
-        margin: 50px 0;
-        outline: none;
+        width: 486px;
     }
 
     #message {
         display: block;
-        width: 569px;
+        width: 486px;
         height: 209px;
-        border-bottom: 1px solid #BDBDBD;
-        border-top: none;
-        border-right: none;
-        border-left: none;
-        font-family: "Open Sans", sans-serif;
-        font-weight: 400;
-        font-size: 14px;
-        color: #BDBDBD;
-        margin: 0 0 0 30px;
-        outline: none;
+        margin: 0 0 0 20px;
     }
 
     .contactus_button {
