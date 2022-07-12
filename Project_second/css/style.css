@@ -65,7 +65,10 @@ header {
 
 .nav-link {
     margin: 36px 0;
-
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 .nav-item {
@@ -147,6 +150,7 @@ header {
     margin: 0 0 120px 0;
     cursor: pointer;
     text-transform: uppercase;
+    transition: 0.3s;
 }
 
 .main-button_item:hover {
@@ -155,7 +159,7 @@ header {
 
 .main-button_item:active {
     background-color: rgba(255, 67, 67, 1);
-    box-shadow: #FF4343; /*доделать*/
+    box-shadow: 4px 4px 30px 0 #FF4343;
 }
 
 .main-button {
@@ -214,6 +218,11 @@ header {
     text-align: center;
 }
 
+.pictures-item_first{
+    display: flex;
+    flex-wrap: no-wrap;
+    flex-direction: row;
+}
 .people_description {
     display: flex;
     justify-content: space-between;
@@ -338,6 +347,16 @@ header {
     font-size: 24px;
     margin: 0 0 114px 0;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.downland-button_item:hover {
+    background-color: #E71414;
+}
+
+.downland-button_item:active {
+    background-color: rgba(255, 67, 67, 1);
+    box-shadow: 4px 4px 30px 0 #FF4343; /*доделать*/
 }
 
 .footer { /*доделать*/
